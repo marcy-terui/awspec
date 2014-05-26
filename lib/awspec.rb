@@ -1,7 +1,7 @@
 require "aws-sdk"
 require "rspec"
 require "awspec/version"
-require "awspec/services"
+require "awspec/type"
 require "awspec/matchers"
 
 module Awspec
