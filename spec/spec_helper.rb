@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 %w(AWS AMAZON).each do |prefix|
   ENV.delete("#{prefix}_REGION")
   ENV.delete("#{prefix}_ACCESS_KEY_ID")
