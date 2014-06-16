@@ -1,4 +1,4 @@
-# Awspec [![BuildStatus](https://travis-ci.org/FumblePerson/awspec.svg?branch=master)](https://travis-ci.org/FumblePerson/awspec) [![Coverage Status](https://coveralls.io/repos/FumblePerson/awspec/badge.png)](https://coveralls.io/r/FumblePerson/awspec)
+# Awspec [![BuildStatus](https://travis-ci.org/FumblePerson/awspec.svg?branch=master)](https://travis-ci.org/FumblePerson/awspec) [![Coverage Status](https://img.shields.io/coveralls/FumblePerson/awspec.svg)](https://coveralls.io/r/FumblePerson/awspec)
 
 RSpec Test for your resources of Amazon Web Services.
 
