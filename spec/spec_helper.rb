@@ -5,7 +5,6 @@
 end
 
 require 'awspec'
-require 'rspec'
 require 'rspec/mocks/standalone'
 
 AWS.config(

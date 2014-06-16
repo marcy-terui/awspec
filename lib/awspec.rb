@@ -1,8 +1,7 @@
 require "aws-sdk"
 require "rspec"
+require "rspec/its"
 require "awspec/version"
 require "awspec/type"
 
-module Awspec
-  # Your code goes here...
-end
+include Awspec::Type

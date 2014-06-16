@@ -21,10 +21,9 @@ module Awspec
   end
 end
 
-describe Awspec::Type::Rds::Parameters do
-  rds = Awspec::Type::Rds::Parameters.new('test')
-  example { expect(rds.key1).to eq('value1') }
-  example { expect(rds.key2).to eq('value2') }
-  example { expect(rds.key3).to eq('value3') }
+describe rds_parameters('test') do
+  its(:key1)  { should eq("value1") }
+  its("key2") { should eq("value2") }
+  its(:key3)  { is_expected.to eq("value3") }
 end
 
