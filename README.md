@@ -1,4 +1,4 @@
-# Awspec
+# Awspec [![BuildStatus](https://travis-ci.org/FumblePerson/awspec.svg?branch=master)](travis-ci.org/FumblePerson/awspec)
 
 RSpec Test for your resources of Amazon Web Services.
 
