@@ -2,7 +2,7 @@ require 'awspec/type/rds/base'
 
 module Awspec
   module Type
-    module Rds
+    module RDS
       class Parameters < Base
 
         MAX_RECORDS = 100

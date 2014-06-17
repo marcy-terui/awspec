@@ -3,6 +3,10 @@ module Awspec
     types = [
       "rds/parameters",
     ]
+    services = {
+      "ec2" => "EC2",
+      "rds" => "RDS",
+    }
     
     types.each do |type|
       require "awspec/type/#{type}"
@@ -10,7 +14,15 @@ module Awspec
       class_names  = type.split("/")
       define_method method_name do |*args|
         name = args.first
-        self.class.const_get('Awspec').const_get('Type').const_get(class_names.first.capitalize).const_get(class_names.last.capitalize).new(name)
+        self.class.const_get('Awspec').const_get('Type').const_get(convert_name(class_names.first)).const_get(convert_name(class_names.last)).new(name)
+      end
+    end
+
+    def convert_name(name)
+      if services.has_key?(name) then
+        services[name]
+      else
+        name.capitalize
       end
     end
 

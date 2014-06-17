@@ -2,7 +2,7 @@ require 'awspec/type/base'
 
 module Awspec
   module Type
-    module Rds
+    module RDS
       class Base < Awspec::Type::Base
 
         def initialize(name)
