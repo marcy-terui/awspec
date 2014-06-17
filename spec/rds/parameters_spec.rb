@@ -2,7 +2,7 @@ require 'spec_helper'
 
 module Awspec
   module Type
-    module Rds
+    module RDS
       class Base < Awspec::Type::Base
 
         def initialize(name)
