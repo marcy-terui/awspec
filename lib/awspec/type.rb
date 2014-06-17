@@ -3,10 +3,6 @@ module Awspec
     types = [
       "rds/parameters",
     ]
-    services = {
-      "ec2" => "EC2",
-      "rds" => "RDS",
-    }
     
     types.each do |type|
       require "awspec/type/#{type}"
@@ -19,6 +15,11 @@ module Awspec
     end
 
     def convert_name(name)
+      services = {
+        "ec2" => "EC2",
+        "rds" => "RDS",
+      }
+      
       if services.has_key?(name) then
         services[name]
       else
