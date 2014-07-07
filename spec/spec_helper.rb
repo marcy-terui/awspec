@@ -17,3 +17,5 @@ AWS.config(
 )
 
 AWS::stub!
+
+include Awspec::Type::Helper
