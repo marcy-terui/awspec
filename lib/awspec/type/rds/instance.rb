@@ -5,7 +5,7 @@ module Awspec
   module Type
     module RDS
       class Instance < Base
-   
+
         def initialize(name)
           super
 
@@ -52,6 +52,15 @@ module Awspec
             end
           end
           raise NameError, "VPC Security Group [#{name}] is not exists or not attached."
+        end
+
+        def db_paramater_group(name)
+          @instance[:db_parameter_groups].each do |pg|
+            if pg[:db_parameter_group_name] == name then
+              return pg
+            end
+          end
+          raise NameError, "DB Parameter Group [#{name}] is not exists or not attached."
         end
 
       end
